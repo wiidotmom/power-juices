@@ -1,0 +1,14 @@
+[project]
+name = "power-juices"
+version = "0.1.0"
+description = "Adds custom juices in the form of potions to grant the player more effects and abilities"
+authors = [
+    {name = "Power Juices Contributors"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beet>=0.112.0",
+    "bolt>=0.49.2",
+    "mecha>=0.99.0",
+]

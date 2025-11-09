@@ -1,0 +1,4 @@
+build/
+.venv/
+.env
+.beet_cache/
