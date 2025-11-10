@@ -1,6 +1,6 @@
 {
 	"env": {
 		"gameVersion": "1.21.10",
-		"exclude": ["build/**"]
+		"exclude": ["build/**", ".beet_cache/**", ".venv/**"]
 	}
 }
