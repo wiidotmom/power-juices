@@ -1,0 +1,27 @@
+name: Build
+
+on: ["push", "workflow_dispatch"]
+
+env:
+  VERSION: "1.21.10"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "0.5.4"
+          enable-cache: true
+
+      - name: Build
+        run: uv run beet build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "mcpeachpies_power_juices_${{ env.VERSION }}.zip"
+          path: "build/"

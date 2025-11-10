@@ -1,6 +1,5 @@
 {
 	"name": "mcpeachpies Power Juices",
-	"version": "0.1.0",
 	"data_pack": {
 		"load": [
 			"https://github.com/Gamemode4Dev/GM4_Datapacks/raw/refs/heads/release/1.21.5/lib_brewing_1_21_5.zip",
