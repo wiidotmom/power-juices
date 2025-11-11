@@ -23,5 +23,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "mcpeachpies_power_juices_${{ env.VERSION }}.zip"
-          path: "build/mcpeachpies_power_juices_data_pack/"
+          name: "power_juices_${{ env.VERSION }}.zip"
+          path: "build/power_juices_data_pack/"
